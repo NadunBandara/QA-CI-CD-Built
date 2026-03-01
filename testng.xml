@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Test Suite" parallel="tests" thread-count="3">
+
+    <test name="Chrome Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.example.tests.PurchaseFlowTest"/>
+        </classes>
+    </test>
+
+<!--   <listeners>-->
+<!--        <listener class-name="com.example.utils.TestListener"/>-->
+<!--    </listeners>-->
+</suite>
